@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html{
+background-image: url(images/black-smooth-textured-paper.jpg);
+}
+body{
+width: 500px;
+}
+/* Navigation Start */
+nav ul { 
+    margin: 10px; 
+    padding-left: 10px;
+    list-style: none; 
+    width: 600px;
+    text-align: center;
+}
+nav li { 
+position: relative; 
+padding: 10px 0;
+}
+nav a {
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 0.2em;
+padding: 15px 5px;
+position: relative;
+}
+nav a:after {    
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: #fff;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+nav a:hover:after { 
+width: 100%; 
+left: 0; 
+}
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 50px 30px;
+}
+#logo{
+    padding-left: 20px;
+}
+.Navbar nav li{
+    display: inline-block;
+}
+/* Navigation End */
+
+/* Main page start */
+.text{
+    letter-spacing: 0.04em;
+    color: #fff;
+    text-align: center;
+}
+.m-section .grid{
+    grid-template-columns: 85px 1fr;
+    margin-left: 30px;
+}
+.m-section .flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px ;
+}
+.m-section .content{
+ margin-right: 30px;
+ grid-column: 2;
+}
+.sidenav{
+    width: 50px;
+    height: 250px;
+}
+.m-section aside {
+    width: 85px;
+    position: fixed;
+    left: 10px;
+    top: 300px;
+    z-index: 5;
+}
+.m-section .construction .grid{
+   grid-template-columns: 80px 1fr;
+   margin-left: 30px;
+}
+/* Main section end */
+
+/* Side navigation start */
+.sidenav nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    height: 60px;
+    list-style: none;
+}
+.sidenav nav li{
+    height: 100%;
+    list-style: none;
+
+}
+.sidenav a img:hover{
+    transform: scale(1.1);
+}
+/* Side navigation end */
+/* Utilities Start */
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.card{
+    background-color: rgba(119, 118, 118, 0.37);
+    border-radius: 10px;
+    box-shadow: 1px 2px rgb(108, 107, 107);
+    margin: 10;
+    padding: 20px;
+  }
+.btn{
+display: inline-block;
+padding: 5px 30px;
+background-color: rgb(164, 161, 161);
+font-weight: bold;
+cursor: pointer;
+border-radius: 15px;
+border: none;
+box-shadow: 1px 2px rgb(37, 36, 36);
+letter-spacing: 0.1em;
+margin-top: 15px;
+}
+.btn:hover{
+transform: scale(1.1);
+}
+/* Utilities end */
+
+/* Footer Start */
+  .thefoot{
+    display: flex;
+    margin:40px;
+    
+    
+  }
+  #copyright{
+    position: relative;
+    top: 30px;
+    font-size: large;
+    padding-left: 20px;
+   }
+ .footer a{
+   font-size: small;
+   margin: 0;
+ }
+ .footlinks{
+    width: 100px;
+    display: flex;
+ }
+ .footlinks ul{
+    width: 220px;
+ }
+ .footlinks li{
+    padding: 5px;
+ }
+.footlinks nav a{
+    padding: 4px 5px;
+}
+.footlinks nav a::after{
+    height: 1px;
+}
+/* Footer End */
+
+/* Contact info Start */
+.contact-title{
+    margin: 0 20px;
+  }
+
+.contactme-form input[type=text], .contactme-form input[type=email], .contactme-form textarea {
+    border:  1.5px solid rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(106, 104, 104, 0);
+    border-radius: 10px;
+    padding: 4px;
+    letter-spacing: 0.1em;
+    box-shadow: 0px 1px rgb(108, 107, 107);
+    color: #fff;
+    font-size: medium;
+    margin: 5px auto;
+}
+.contactme-form{
+    position: relative;
+    height: 400px;
+    padding: 20px;
+    color: rgb(12, 12, 12);
+  }
+
+.contactme-form input:focus,
+.contactme-form textarea:focus{
+    outline: none;
+    
+}
+
+/* Contact info end */
