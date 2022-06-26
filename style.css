@@ -65,6 +65,7 @@ left: 0;
     grid-template-rows: auto 1fr auto;
     row-gap: 20px;
     grid-column: 2;
+    justify-items: center;
 }
 
 .m-section .flex{
@@ -140,7 +141,8 @@ left: 0;
     margin: 10;
     padding: 20px;
     max-width: 600px;
-    place-self: center;
+    /* place-self: center; */
+    height: max-content;
   }
 .btn{
 display: inline-block;
@@ -169,8 +171,9 @@ transform: scale(1.1);
     grid-column: 3;
 }
 .htext{
-    grid-column: 2/3;
     margin-right: 30px;
+    grid-column: 2;
+
 }
 .desktop{
  display: none;
@@ -179,10 +182,6 @@ transform: scale(1.1);
 /* Utilities end */
 
 /* Footer Start */
-    footer{
-        position: static;
-        bottom: 0;
-    }
   .thefoot{
     display: flex;
     margin-top:40px;
@@ -193,15 +192,12 @@ transform: scale(1.1);
     position: relative;
     top: 30px;
     font-size: large;
+    height: fit-content;
+    
     
    }
- .footer a{
-   font-size: small;
-   margin: 0;
- }
  .footlinks{
     width: 240px;
-    display: flex;
  }
  .footlinks ul{
     width: 220px;
@@ -251,16 +247,109 @@ transform: scale(1.1);
 
 /* Hobbies Start */
 
+.eimg{
+    width:400px;
+}   
 .himg img{
     width: 500px;
+    height: 333.33px;
     border-radius: 10px;
 }
 
 
-/* .m-section .hobbygrid{
-    grid-template-columns: 65px 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    row-gap: 20px;
-} */
-
 /* Hobbies End */
+
+/* Media Queries Start */
+@media screen and (min-width: 800px){
+    /* Footer */
+    .thefoot{
+        justify-content: space-around;
+        place-self: center;
+        align-items: center;
+        width: 900px;
+        
+    }
+    #copyright{
+        margin-left: 30px;
+        margin-bottom: 30px;
+        font-size: larger;
+        display: flex;
+        place-items: center;
+        column-gap: 30px;
+    }
+    .footlinks ul{
+        display: flex;
+        width: 800px;
+        justify-content: space-evenly;
+        font-size: medium;
+        margin-left: 0;
+    }
+    .footlinks p {
+        text-align: right;
+        padding-left: 36px;
+        font-size: 20px;
+    }
+    footer{
+        margin-bottom: 30px;
+    }
+    /* Footer */
+    /* Contact */
+    .contact{
+        display: grid;
+        grid-template-columns: 85px 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .contact-title{
+        grid-column: 2/5;
+        max-width: 400px;
+    }
+    .contactme-form{
+        margin: 0;
+        grid-column: 5/7;
+    }
+
+    /* Contact */
+    /* Experience */
+    .eimg{
+        grid-row: 2;
+    }
+    .eimg img{
+        width: 800px;
+        height: 400px;
+    }
+    .giff{
+        grid-row: 3;
+        display: inline-block;
+    } 
+    /* Experience */
+    /* Hobbies */
+    .desktop{
+        display: contents;
+    }
+
+    .m-section .hobbygrid{
+        grid-template-columns: 85px 1fr 1fr;
+        grid-template-rows: repeat(9,1fr);
+        
+    }
+    .htext{
+        grid-column: 2 / 3;
+        align-self: center;
+        place-self: center;
+    }
+    /* Hobbies */
+    /* Top Nav */
+    .Navbar{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }  
+    nav a{
+        font-size: larger;
+    }
+
+
+
+
+
+
+}
+/* Media Queries End */
