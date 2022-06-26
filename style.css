@@ -71,12 +71,12 @@ left: 0;
     grid-template-columns: 50px 1fr;
     gap: 20px;
 }
-/* .m-section .flex{
+.m-section .flex{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 20px ;
-} */
+}
 .m-section .content{
  margin-right: 30px;
  grid-column: 2;
@@ -93,7 +93,14 @@ left: 0;
     top: 300px;
     z-index: 5;
 }
+.m-section .construction{
+    grid-column: 2;
 
+}
+
+.m-section .contact{
+    grid-column: 2;
+}
 /* Main section end */
 
 /* Side navigation start */
@@ -141,7 +148,7 @@ border-radius: 15px;
 border: none;
 box-shadow: 1px 2px rgb(37, 36, 36);
 letter-spacing: 0.1em;
-margin-top: 15px;
+margin-top: 5px;
 }
 .btn:hover{
 transform: scale(1.1);
