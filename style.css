@@ -6,9 +6,8 @@
 html body{
 background-image: url(images/black-smooth-textured-paper.jpg);
     height: 100%;
+    font-size: 17px;
 }
-
-
 nav ul { 
     margin: 10px; 
     padding-left: 10px;
@@ -60,16 +59,12 @@ left: 0;
 /* Navigation End */
 
 /* Main page start */
-.text{
-    letter-spacing: 0.04em;
-    color: #fff;
-    text-align: center;
-}
 .m-section{
     display: grid;
     grid-template-columns: 65px 1fr;
     grid-template-rows: auto 1fr auto;
     row-gap: 20px;
+    grid-column: 2;
 }
 
 .m-section .flex{
@@ -101,8 +96,10 @@ left: 0;
     text-align: center;
     margin: 0 20px;
 }
-
-
+.construction img{
+    margin: 10px 0;
+    width: 400px;
+}
 .m-section .contact{
     grid-column: 2;
 }
@@ -160,6 +157,25 @@ margin-top: 5px;
 .btn:hover{
 transform: scale(1.1);
 }
+.text{
+    letter-spacing: 0.04em;
+    color: #fff;
+    text-align: center;
+}
+.col1{
+    grid-column: 2;
+}
+.col2{
+    grid-column: 3;
+}
+.htext{
+    grid-column: 2/3;
+    margin-right: 30px;
+}
+.desktop{
+ display: none;
+}
+
 /* Utilities end */
 
 /* Footer Start */
@@ -232,3 +248,19 @@ transform: scale(1.1);
 }
 
 /* Contact info end */
+
+/* Hobbies Start */
+
+.himg img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+
+/* .m-section .hobbygrid{
+    grid-template-columns: 65px 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 20px;
+} */
+
+/* Hobbies End */
